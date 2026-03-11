@@ -9,7 +9,7 @@ const char *atributos[] = {
 
 void generar_atributos(int stats[6]) {
     for (int i = 0; i < 6; i++) {
-        stats[i] = (rand() % 16) + 3; // entre 3 y 18
+        stats[i] = (rand() % 13) + 6; // modifiqué el rango para que los atributos sean de 6 a 18, sebastian
     }
 }
 
