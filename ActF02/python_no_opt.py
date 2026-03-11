@@ -1,39 +1,23 @@
 # python_no_opt.py
-# Versión: 1.0.0
+# Versión: 1.1.0
+#Autor:
+#Fecha: 2026/03/10
+# Descripción:El programa calcula frecuencias de una lista de enteros,encuentra el modo y suma los dígitos del valor modal.
+#Entrada: Lista de enteros "números".
+#Salida: Frecuencias,modos,su cuenta y suma de dígitos de modo.
+#MOD: v1.1.0- Se reemplaza lista de tuplas por diccionario, se elimina el doble while aninado y recorridos extra redundantes.
 
-# El código Python recorre una lista de enteros construyendo una estructura de frecuencias para cada valor,
-#determina el valor modal (el que más aparece) y calcula la suma de dígitos de ese valor; utiliza while y for
-#junto con if/else anidados para las búsquedas y los conteos. El código en C itera los enteros desde 2 hasta N,
-#comprueba la primalidad de cada número probando divisores, acumula el conteo y la suma de los primos encontrados y
-#clasifica cuántos son pares y cuántos impares, empleando for, while e if/else anidados en el proceso.
-
-
-numeros = [3, -1, 0, 5, -7, 0, 2, 3, 3, -1, 5, 5, 5]  # ejemplo; en práctica puede venir de input
+numeros = [3, -1, 0, 5, -7, 0, 2, 3, 3, -1, 5, 5, 5]  # lista de entrada
 
 # Contadores y estructuras iniciales
-frecuencias = []   # lista de tuplas (valor, cuenta) construida de forma ineficiente
+frecuencias = {}  # diccionario {valor:cantidad_de_apariciones}
 i = 0
-
-# Construir lista de valores únicos y sus cuentas de forma O(n^2)
-while i < len(numeros):
-    val = numeros[i]
-    # comprobar si ya está en frecuencias (búsqueda lineal)
-    encontrado = False
-    j = 0
-    while j < len(frecuencias):
-        if frecuencias[j][0] == val:
-            encontrado = True
-            # no usamos break para forzar más trabajo y mostrar if anidado
-            if encontrado:
-                # reconstruimos la tupla incrementando manualmente
-                viejo_val, viejo_cnt = frecuencias[j]
-                nuevo_cnt = viejo_cnt + 1
-                frecuencias[j] = (viejo_val, nuevo_cnt)
-            else:
-                # rama que nunca se ejecuta, intencional para mostrar código redundante
-                frecuencias.append((val, 1))
-        j = j + 1
-    if not encontrado:
+for val in numeros:
+    if val in frecuencias:
+        frecuencias[val] += 1   # incrementa el contador si el valor ya existe
+    else:
+        frecuencias[val] = 1    # registra el valor nuevo con contador inicial 1
+   
         # si no estaba, contar cuántas veces aparece (nuevo recorrido)
         cnt = 0
         k = 0
