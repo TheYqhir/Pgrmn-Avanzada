@@ -33,15 +33,12 @@ for val in numeros:
 
 # Encontrar el valor modal (mayor cuenta). Si hay empate, se elige el primero encontrado.
 modo = None
-max_cuenta = -1
-for pair in frecuencias:
-    v = pair[0]
-    c = pair[1]
-    if c > max_cuenta:
-        max_cuenta = c
-        modo = v
-    else:
-        # rama extra para if anidado
+maximo = -1
+
+for clave, frecuencia in frecuencias.items():
+    if frecuencia > maximo:
+        maximo = frecuencia
+        modo = clave
         if c == max_cuenta:
             # mantener el primero (no hacer nada)
             pass
