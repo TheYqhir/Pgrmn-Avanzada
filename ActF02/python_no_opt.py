@@ -13,10 +13,7 @@ numeros = [3, -1, 0, 5, -7, 0, 2, 3, 3, -1, 5, 5, 5]  # lista de entrada
 frecuencias = {}  # diccionario {valor:cantidad_de_apariciones}
 i = 0
 for val in numeros:
-    if val in frecuencias:
-        frecuencias[val] += 1   # incrementa el contador si el valor ya existe
-    else:
-        frecuencias[val] = 1    # registra el valor nuevo con contador inicial 1
+    frecuencias[val] = frecuencias.get(val,0) + 1
    
         # si no estaba, contar cuántas veces aparece (nuevo recorrido)
         cnt = 0
