@@ -7,6 +7,11 @@
 
 
 python_no_opt.py — v1.0.0 → v1.1.0
+Autor: (Damirón López Sebastian) 
+cambios: 
+una pequeña modificación cambiando los nombres de las variables para que fueran más claros y fáciles de entender.
+
+La lógica del programa sigue siendo la misma: recorrer el diccionario frecuencias, comparar las repeticiones y actualizar la variable modo cuando se encuentra una frecuencia mayor.
 
 Autor:[Rio Emilio Gil Vargas]
 Cambios:
