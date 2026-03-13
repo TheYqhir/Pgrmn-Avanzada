@@ -43,8 +43,8 @@ int main() {
         }
 
         if (es_primo) {
-            count_primos = count_primos + 1;
-            suma_primos = suma_primos + m;
+            count_primos++;
+           suma_primos += m;
             if (m % 2 == 0) {
                 primos_pares = primos_pares + 1;
             } else {
