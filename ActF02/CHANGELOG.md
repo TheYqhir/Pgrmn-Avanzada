@@ -1,7 +1,10 @@
+python_no_opt.py v1.0.0 -> v1.1.0.
+Autor: (Daniel Alejandro Reyes Solis) 
+cambios: Reducción de if/else a solo una operación. 
 
-
-
-
+c_no_opt.c v1.0.0 -> v1.1.0.
+Autor: (Daniel Alejandro Reyes Solis)
+Cambios: Se optimiza la actualización de contadores usando operadores de incremento (++) y acumulación (+-) para mejorar claridad y eficiencia del codigo. 
 
 
 
