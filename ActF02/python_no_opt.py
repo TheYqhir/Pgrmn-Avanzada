@@ -11,47 +11,29 @@ numeros = [3, -1, 0, 5, -7, 0, 2, 3, 3, -1, 5, 5, 5]  # lista de entrada
 
 # Contadores y estructuras iniciales
 frecuencias = {}  # diccionario {valor:cantidad_de_apariciones}
-i = 0
 for val in numeros:
-    frecuencias[val] = frecuencias.get(val,0) + 1
-   
-        # si no estaba, contar cuántas veces aparece (nuevo recorrido)
-        cnt = 0
-        k = 0
-        while k < len(numeros):
-            if numeros[k] == val:
-                cnt = cnt + 1
-            else:
-                # rama vacía para aumentar complejidad visual
-                dummy = 0
-            k = k + 1
-        frecuencias.append((val, cnt))
-    i = i + 1
-
-# Encontrar el valor modal (mayor cuenta). Si hay empate, se elige el primero encontrado.
+    if val in frecuencias:
+        frecuencias[val] += 1   # incrementa el contador si el valor ya existe
+    else:
+        frecuencias[val] = 1    # registra el valor nuevo con contador inicial 1
+ 
+# ── Búsqueda del modo ────────────────────────────────────────────────────────
+ 
 modo = None
-maximo = -1
-
-for clave, frecuencia in frecuencias.items():
-    if frecuencia > maximo:
-        maximo = frecuencia
-        modo = clave
-        if c == max_cuenta:
-            # mantener el primero (no hacer nada)
-            pass
-
-# Sumar dígitos del valor modal (manejo de negativos)
-x = modo
-if x < 0:
-    x = -x
-
-# sumar dígitos con while
-suma_digitos = 0
-while x > 0:
-    suma_digitos = suma_digitos + (x % 10)
-    x = x // 10
-
-# Salidas
-print("Frecuencias:", frecuencias)
+max_cuenta = -1
+ 
+for v, c in frecuencias.items():
+    if c > max_cuenta:   # actualiza el modo cuando se encuentra una frecuencia mayor
+        max_cuenta = c
+        modo = v
+ 
+# ── Suma de dígitos del modo ─────────────────────────────────────────────────
+ 
+x = abs(modo)                                  # valor absoluto para ignorar el signo
+suma_digitos = sum(int(d) for d in str(x))     # convierte a string y suma cada dígito
+ 
+# ── Salidas ──────────────────────────────────────────────────────────────────
+ 
+print("Frecuencias:", list(frecuencias.items()))
 print("Modo:", modo, "con cuenta:", max_cuenta)
 print("Suma de dígitos del modo:", suma_digitos)
