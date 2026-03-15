@@ -1,3 +1,30 @@
+
+
+c_no_opt.c — v1.0.0 → v1.1.0
+
+Autor: [Rio Emilio Gil Vargas]
+Cambios:
+Se agrega break al detectar el primer divisor, eliminando iteraciones inútiles.
+Se limita la búsqueda de divisores a sqrt(m) en lugar de m-1, reduciendo la complejidad de O(n) a O(√n) por candidato.
+
+python_no_opt.py — v1.0.0 → v1.1.0
+
+Autor: [Rio Emilio Gil Vargas]
+Se elimina el recorrido extra para contar ocurrencias de valores nuevos.
+Se elimina la variable dummy del else vacío.
+results/ — benchmarks agregados
+
+Autor:  [Rio Emilio Gil Vargas]
+Archivos añadidos:
+
+results/benchmark_python.csv — 15 mediciones de la versión base y optimizada de Python (1 000 ejecuciones por muestra con timeit).
+results/benchmark_c.csv — 15 mediciones de la versión base y optimizada de C (10 000 iteraciones internas por muestra con clock()).
+
+
+Resultados: Python speedup ~5.69x, C speedup ~87x. Ver ANALYSIS.md para el análisis completo.
+
+
+
 python_no_opt.py v1.0.0 -> v1.1.0.
 Autor: (Daniel Alejandro Reyes Solis) 
 cambios: Reducción de if/else a solo una operación. 
