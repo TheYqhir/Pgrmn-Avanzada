@@ -1,7 +1,7 @@
 /*
  * Programa: Generador de Personajes RPG
- * Autor: [Nombre del integrante que sube esta versión]
- * Versión: 1.0.0
+ * Autor: [Equipo Programación]
+ * Versión: 1.1.0
  * Descripción: Generador aleatorio de atributos para personajes de juegos de rol.
  * Fecha: 2026-03-27
  */
