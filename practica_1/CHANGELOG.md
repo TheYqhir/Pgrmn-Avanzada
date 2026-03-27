@@ -16,7 +16,7 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 ## [2.0.0] - 2026-03-25
 
-### Autor: Carlos Mendoza
+### Autor: Rio Emilio Gil Vargas
 
 #### Agregado
 - MAJOR: Refactorización completa del código
@@ -32,7 +32,7 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 ## [1.4.0] - 2026-03-20
 
-### Autor: Laura Ramírez
+### Autor: Daniel Reyes Solis 
 
 #### Agregado
 - MINOR: Sistema de clases de personaje
@@ -44,7 +44,7 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 ## [1.3.0] - 2026-03-15
 
-### Autor: Miguel Torres
+### Autor: Daniel Luna
 
 #### Agregado
 - MINOR: Sistema de razas para personajes
@@ -59,7 +59,7 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 ## [1.2.1] - 2026-03-12
 
-### Autor: Ana López
+### Autor: Rio Emilio Gil Vargas
 
 #### Corregido
 - PATCH: Corregir formato de salida en versión Python
@@ -70,7 +70,7 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 ## [1.2.0] - 2026-03-10
 
-### Autor: Carlos Mendoza
+### Autor: Yahir Gonzalez
 
 #### Agregado
 - MINOR: Cálculo de modificadores de atributos
@@ -82,7 +82,7 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 ## [1.1.1] - 2026-03-05
 
-### Autor: Laura Ramírez
+### Autor: Jorge Saldaña
 
 #### Corregido
 - PATCH: Validación de entrada en programa Python
@@ -93,7 +93,7 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 ## [1.1.0] - 2026-03-03
 
-### Autor: Rio Emili
+### Autor: Rio Emilio Gil Vargas
 
 #### Agregado
 - MINOR: Opción para generar otro personaje sin reiniciar
