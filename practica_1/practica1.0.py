@@ -1,9 +1,9 @@
 """
 Programa: Generador de Personajes RPG
-Autor: Miguel Torres
+Autor: Equipo de programación
 Versión: 1.3.0
 Descripción: Generador con sistema de razas y bonificaciones.
-Fecha: 2026-03-15
+Fecha: 2026-03-27
 """
 
 import random
