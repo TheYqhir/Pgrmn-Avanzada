@@ -1,3 +1,11 @@
+/*
+ * Programa: Generador de Personajes RPG
+ * Autor: [Nombre del integrante que sube esta versión]
+ * Versión: 1.0.0
+ * Descripción: Generador aleatorio de atributos para personajes de juegos de rol.
+ * Fecha: 2026-03-27
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -9,7 +17,7 @@ const char *atributos[] = {
 
 void generar_atributos(int stats[6]) {
     for (int i = 0; i < 6; i++) {
-        stats[i] = (rand() % 13) + 6; // modifiqué el rango para que los atributos sean de 6 a 18, sebastian
+        stats[i] = (rand() % 13) + 6;
     }
 }
 
@@ -25,13 +33,42 @@ int main() {
     srand(time(NULL));
 
     char nombre[50];
-    printf("¡Bienvenido al Generador de Personajes!\n");
-    printf("Introduce el nombre de tu heroe: ");
+    printf("¡Bienvenido al Generador de Personajes RPG!\n");
+    printf("Introduce el nombre de tu héroe: ");
+    fgets(nombre, sizeof(nombre), stdin);
+
+    for (int i = 0; nombre[i]; i++) {
+        if (nombre[i] == '\n') { 
+            nombre[i] = '\0'; 
+            break; 
+        }
+    }
+
+    if (nombre[0] != '\0') {
+        int stats[6];
+        generar_atributos(stats);
+        mostrar_personaje(nombre, stats);
+    } else {
+        printf("Error: El personaje necesita un nombre para existir.\n");
+    }
+
+    return 0;
+}
+
+int main() {
+    srand(time(NULL));
+
+    char nombre[50];
+    printf("¡Bienvenido al Generador de Personajes RPG!\n");
+    printf("Introduce el nombre de tu héroe: ");
     fgets(nombre, sizeof(nombre), stdin);
 
     // Quitar salto de línea
     for (int i = 0; nombre[i]; i++) {
-        if (nombre[i] == '\n') { nombre[i] = '\0'; break; }
+        if (nombre[i] == '\n') { 
+            nombre[i] = '\0'; 
+            break; 
+        }
     }
 
     if (nombre[0] != '\0') {
