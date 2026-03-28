@@ -2,11 +2,11 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
-## [1.1.0] - 2026-03-27+
-
-### Autor: Damirón López Sebastián
-### Agregado
+## 2.1.0 – 2026-03-27 – Damirón López Sebastián
 Se agregó validación de entrada en el menú para evitar errores.
+
+## 1.4.0 – 2026-03-27 – Damirón López Sebastián
+Se agregó un menú que permite generar múltiples personajes sin reiniciar el prog
 
 
 
