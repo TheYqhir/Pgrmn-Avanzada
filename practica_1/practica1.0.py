@@ -36,29 +36,32 @@ def mostrar_personaje(nombre, stats, raza):
         mod = calcular_modificador(v)
         print(f"{k:<14}: {v:2d} ({mod:+d})")
     print("----------------------------------\n")
-
 def main():
     print("¡Bienvenido al Generador de Personajes RPG!")
-    nombre = input("Introduce el nombre de tu héroe: ")
     
-    if not nombre:
-        print("Error: El personaje necesita un nombre para existir.")
-        return
-    
-    print("\nRazas disponibles:")
-    for i, raza in enumerate(RAZAS.keys(), 1):
-        print(f"{i}. {raza}")
-    
-    try:
-        opcion = int(input("Selecciona una raza (1-4): "))
-        raza = list(RAZAS.keys())[opcion - 1]
-    except (ValueError, IndexError):
-        print("Opción inválida. Se usará Humano por defecto.")
-        raza = "Humano"
-    
-    mis_stats = generar_atributos()
-    mis_stats = aplicar_raza(mis_stats, raza)
-    mostrar_personaje(nombre, mis_stats, raza)
+    while True:
+        nombre = input("\nIntroduce el nombre de tu héroe: ")
+        
+        if not nombre:
+            print("Error: El personaje necesita un nombre para existir.")
+            continue
+        
+        print("\nRazas disponibles:")
+        for i, raza in enumerate(RAZAS.keys(), 1):
+            print(f"{i}. {raza}")
+        
+        try:
+            opcion = int(input("Selecciona una raza: "))
+            raza = list(RAZAS.keys())[opcion - 1]
+        except (ValueError, IndexError):
+            print("Opción inválida. Se usará Humano por defecto.")
+            raza = "Humano"
+        
+        mis_stats = generar_atributos()
+        mis_stats = aplicar_raza(mis_stats, raza)
+        mostrar_personaje(nombre, mis_stats, raza)
 
-if __name__ == "__main__":
-    main()
+        repetir = input("¿Quieres crear otro personaje? (s/n): ").lower()
+        if repetir != 's':
+            print("¡Hasta pronto, aventurero!")
+            break
