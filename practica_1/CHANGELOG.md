@@ -41,11 +41,11 @@ Se agregó un menú que permite generar múltiples personajes sin reiniciar el p
 
 ## [1.4.0] - 2026-03-20
 
-### Autor: Daniel Reyes Solis 
+## Autor Daniel Alejandro Reyes Solis 
 
-#### Agregado
-- MINOR: Sistema de clases de personaje
-- Clases disponibles: Guerrero, Mago, Pícaro, Clérigo
+### Agregado 
+- MINOR: Sistema de clases de personaje 
+- Clases disponibles: Guerrero, Mago, Pícaro, Clérigo 
 - Cada clase muestra descripción y habilidades especiales
 - Recomendación de clase según atributos generados
 
