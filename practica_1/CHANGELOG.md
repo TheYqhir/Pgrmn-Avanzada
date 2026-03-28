@@ -122,13 +122,13 @@ Se agregó un menú que permite generar múltiples personajes sin reiniciar el p
 
 ---
 
-## [1.0.1] - 2026-02-28
+## [1.0.2] - 2026-02-28
 
-### Autor: Daniel Alejandro Reyes Solís 
+## Autor: Daniel Alejandro Reyes Solis
 
-#### Corregido
-- PATCH: Corregir mensaje de bienvenida
-- Cambio de "para GitHub" a "RPG" en mensaje de Python
+### Corregido 
+- PATCH: Corregir mensaje de bienvenida 
+- Cambio de "para Github" a "RPG" en mensaje de Python 
 - Mejorar formato de separadores en salida
 
 ---
