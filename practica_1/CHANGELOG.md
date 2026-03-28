@@ -2,6 +2,15 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [1.1.0] - 2026-03-27+
+
+### Autor: Damirón López Sebastián
+### Agregado
+Se agregó validación de entrada en el menú para evitar errores.
+
+
+
+
 ## [1.1.0] - 2026-03-27
 
 ### Autor: Rio Emilio Gil Vargas
