@@ -11,6 +11,11 @@
 #include <time.h>
 #include <string.h>
 
+void limpiar_buffer() {
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
+}
+
 const char *atributos[] = {
     "Fuerza", "Destreza", "Constitución",
     "Inteligencia", "Sabiduría", "Carisma"
@@ -73,7 +78,12 @@ int main() {
 
     do {
         mostrar_menu();
-        scanf("%d", &opcion);
+    if (scanf("%d", &opcion) != 1) {
+    printf("\nEntrada inválida.\n");
+    limpiar_buffer();
+    opcion = 0;
+    continue;
+}
 
         switch(opcion) {
             case 1:
