@@ -1,7 +1,7 @@
 #  Presentación del Proyecto
 
 ## Información de los Estudiantes
-* **Nombre:** Yahir
+* **Nombre:** Yahir (TheYqhir)
 * **ID / Matrícula:** S24013215
 
 * **Nombre:** 
