@@ -282,7 +282,7 @@ def main():
         for r in readings:
             writer.writerow(r) 
             
-    os.rename(temp_csv, final_csv)
+    os.replace(temp_csv, final_csv)
     print(f"Datos guardados en {final_csv}")
 
     
@@ -317,35 +317,7 @@ if __name__ == '__main__':
     with open(temp_csv, mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['timestamp', 'temp_raw', 'ldr_raw', 'temp_filtered', 'ldr_filtered'])
-        for r in readings:
-            writer.writerow(r) 
-            
-    os.rename(temp_csv, final_csv)
-    print(f"Datos guardados en {final_csv}")
-
-    
-    timestamps = [datetime.strptime(r[0], '%Y-%m-%dT%H:%M:%SZ') for r in readings]
-    temps_f = [r[3] for r in readings] 
-    ldrs_f = [r[4] for r in readings]  
-
-    fig, ax1 = plt.subplots(figsize=(10, 5))
-
-    color = 'tab:red'
-    ax1.set_xlabel('Tiempo')
-    ax1.set_ylabel('Temperatura (°C)', color=color)
-    ax1.plot(timestamps, temps_f, color=color, label='Temp (Filtrada)')
-    ax1.tick_params(axis='y', labelcolor=color)
-
-    ax2 = ax1.twinx()
-    color = 'tab:blue'
-    ax2.set_ylabel('LDR (ADC)', color=color)
-    ax2.plot(timestamps, ldrs_f, color=color, label='LDR (Filtrada)')
-    ax2.tick_params(axis='y', labelcolor=color)
-
-    fig.tight_layout()
-    plt.title('Lecturas de Temperatura y LDR en el Tiempo')
-    plt.savefig('../results/plot.png')
-    print("Gráfica guardada en ../results/plot.png")
+       
 
 if __name__ == '__main__':
     main()
