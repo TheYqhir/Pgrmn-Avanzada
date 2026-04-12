@@ -27,5 +27,5 @@ A continuación se muestra la gráfica generada tras la última ejecución del s
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/TheYqhir/F04.git](https://github.com/TheYqhir/F04.git)
+   git clone [https://github.com/TheYqhir/Pgrmn-Avanzada.git](https://github.com/TheYqhir/Pgrmn-Avanzada.git)
    cd F04
