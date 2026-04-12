@@ -4,8 +4,8 @@
 * **Nombre:** Yahir (TheYqhir)
 * **ID / Matrícula:** S24013215
 
-* **Nombre:** 
-* **ID / Matrícula:**
+* **Nombre:** Daniel (Danilux25)
+* **ID / Matrícula:** S24013169
 
 * **Nombre:** 
 * **ID / Matrícula:**
