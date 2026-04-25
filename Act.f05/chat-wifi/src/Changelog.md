@@ -18,12 +18,11 @@
 
 ---
 
-### Y
+### Yahir González Domínguez 
 
 * **feat:** implementación de lista global `clientes` para almacenar conexiones activas.
 * **feat:** lógica de reenvío de mensajes a todos los clientes conectados excepto el emisor.
 * **feat:** uso de `send()` para retransmitir mensajes en el chat.
-
 ---
 
 ### Sebastian Damirón López 
