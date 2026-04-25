@@ -26,7 +26,7 @@
 
 ---
 
-### S
+### Sebastian Damirón López 
 
 * **feat:** manejo básico de errores con bloque `try/except` en recepción de mensajes.
 * **feat:** detección de desconexión cuando `recv()` retorna vacío.
