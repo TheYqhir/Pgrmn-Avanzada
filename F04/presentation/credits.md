@@ -7,8 +7,8 @@
 * **Nombre:** Daniel (Danilux25)
 * **ID / Matrícula:** S24013169
 
-* **Nombre:** 
-* **ID / Matrícula:**
+* **Nombre:** Daniel (The Exoned)
+* **ID / Matrícula:** S23013976
 
 * **Nombre:** 
 * **ID / Matrícula:**
