@@ -10,7 +10,7 @@
 
 ---
 
-### DANIEL
+### DANIEL ALEJANDRO REYES SOLIS
 
 * **feat:** implementación de la función `manejar_cliente(conn, addr)` para gestionar cada cliente conectado.
 * **feat:** uso de `recv()` y `decode('utf-8')` para recibir mensajes del cliente.
