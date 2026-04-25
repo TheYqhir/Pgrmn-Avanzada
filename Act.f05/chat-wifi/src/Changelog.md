@@ -41,7 +41,7 @@
 
 ---
 
-### M
+### Jorge Miguel Saldaña Aguilar 
 
 * **feat:** implementación de recepción de mensajes en el cliente con `recv()` y `decode()`.
 * **feat:** uso de `threading.Thread` para ejecución concurrente de envío y recepción.
