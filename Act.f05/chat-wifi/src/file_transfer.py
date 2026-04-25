@@ -1,4 +1,4 @@
-"""
+""
 file_transfer.py — Transferencia de archivos sobre TCP (mejora opcional)
 
 Protocolo:
