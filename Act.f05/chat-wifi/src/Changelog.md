@@ -34,7 +34,7 @@
 
 ---
 
-### C
+### Axel Daniel Luna Carmona
 
 * **feat:** implementación del cliente TCP con `socket()` y `connect()`.
 * **feat:** configuración manual de la IP del servidor (`HOST = '192.168.0.102'`).
