@@ -26,7 +26,9 @@ def manejar_cliente(conn, addr):
         except:
             break
 
-
+    print(f"[DESCONECTADO] {addr}")
+    clientes.remove(conn)
+    conn.close()
 
 print("[SERVIDOR LISTO] Esperando conexiones...")
 
