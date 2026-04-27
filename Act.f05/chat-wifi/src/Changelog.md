@@ -2,7 +2,7 @@
 
 ## [Etapa 1] - Implementación base del chat TCP
 
-### R
+### RIO EMILIO GIL VARGAS
 
 * **feat:** creación del servidor TCP usando sockets (`socket.AF_INET`, `socket.SOCK_STREAM`).
 * **feat:** configuración inicial de `HOST = '0.0.0.0'` y `PORT = 5000`.
