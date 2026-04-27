@@ -1,7 +1,10 @@
+import socket
+import threading
+
+HOST = '192.168.0.102'  
+PORT = 5000
 
 
-cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-cliente.connect((HOST, PORT))
 
 def recibir():
     while True:
